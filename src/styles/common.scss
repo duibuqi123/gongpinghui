@@ -1,0 +1,35 @@
+
+
+@function w($px){
+	@return ($px/37.5)*1rem;// 给第一个参数添加一个单位
+}
+@function h($px){
+	@return ($px/37.5)*1rem;// 给第一个参数添加一个单位
+}
+@function lh($px){
+	@return ($px/37.5)*1rem;// 给第一个参数添加一个单位
+}
+@function fs($px){
+	@return ($px/37.5)*1rem;
+}
+@function padding($top,$right,$bottom,$left){
+	@return padding(($top/37.5)*1rem,($right/37.5)*1rem,($bottom/37.5)*1rem,($left/37.5)*1rem);
+}
+@function margin($top,$right,$bottom,$left){
+    @return margin(($top/37.5)*1rem,($right/37.5)*1rem,($bottom/37.5)*1rem,($left/37.5)*1rem);
+}
+@function top($px){
+    @return ($px/37.5)*1rem;
+}
+@function bottom($px){
+    @return ($px/37.5)*1rem;
+}
+@function left($px){
+    @return ($px/37.5)*1rem;
+}
+@function right($px){
+    @return ($px/37.5)*1rem;
+}
+
+
+

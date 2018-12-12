@@ -1,0 +1,46 @@
+
+@function fn($px){
+    @return $px/37.5*1rem;
+}
+.detailPage{
+    width:100%;
+    position: fixed;
+    top:fn(44);
+    left:0;
+    z-index: 111;
+    display: flex;
+    width:100%;
+    overflow: hidden;
+    background:#fff;
+    border-bottom:1px solid #dadada ;
+    .tabs{
+        flex:1;
+        height:fn(40);
+        text-align: center;
+        line-height: fn(40);
+        font-size: fn(12);
+        border:1px solid #eee ;
+        color:#555;
+        border-radius: fn(4);
+    }
+    .styles{
+        color:#f03a58;
+        border-bottom: 2px solid #f03a58;
+    }
+}
+.detailPageContents{
+    
+    margin-top: fn(84);
+}
+
+
+
+
+
+
+
+
+
+
+
+

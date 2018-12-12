@@ -1,0 +1,35 @@
+
+@function fn($px){
+    @return $px/37.5*1rem;
+}
+
+html,body{
+    height:100%;
+}
+#root,.App{
+    @extend body;
+}
+.App{
+    display:flex;
+    flex-direction:column;
+    .main{
+        flex:1;
+        overflow-y: auto;
+        font-size:fn(14);
+        margin-bottom:fn(50);
+    }
+    .am-tab-bar{
+        flex:1;
+        position: fixed;
+        left:0;
+        bottom:0;
+        width:100%;
+        height:fn(50);
+        font-size:fn(14);
+        line-height: fn(18);
+        z-index: 999;
+        .am-tab-bar-bar{
+            overflow: hidden;
+        }
+    }
+}

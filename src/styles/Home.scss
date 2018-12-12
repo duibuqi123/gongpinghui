@@ -1,0 +1,18 @@
+@function fn($px){
+    @return $px/37.5*1rem;
+}
+.Home{
+    font-size:fn(14);
+    .banner{
+        width:100%;
+        height:fn(200);
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top:fn(44);
+        height:fn(200);
+        img{
+            width:100%;
+            height:fn(200);
+        }
+    }
+}

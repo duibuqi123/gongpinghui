@@ -1,0 +1,40 @@
+
+@function fn($px){
+    @return $px/37.5*1rem;
+}
+
+.HomeFenLeiPinPai{
+    background:#fff;
+    overflow: hidden;
+    .toppic{
+        overflow: hidden;
+        a{
+            display: block;
+            padding:fn(8);
+            width:100%;
+            overflow: hidden;
+            box-sizing: border-box;
+            img{
+                display: block;
+                width:fn(300);
+                height:fn(85);
+                margin:0 auto;
+            }
+        }        
+    }   
+    .pic{
+        display: flex;        
+        a{
+            flex:1;
+            padding:fn(8);
+            box-sizing: border-box;
+            img{
+                display: block;
+                width:100%;
+            }
+        }
+    }
+}
+
+
+

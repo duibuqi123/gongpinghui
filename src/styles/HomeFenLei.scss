@@ -1,0 +1,23 @@
+
+
+@function fn($px){
+    @return $px/37.5*1rem;
+}
+
+.goods-item{
+    padding:fn(10);   
+    img{
+        display:block;
+        margin:0 auto;
+        width:fn(40);
+        height:fn(40);
+    }
+    p{
+        line-height: fn(18);
+        font-size:fn(12);
+        color:#555;
+    }
+}
+
+
+

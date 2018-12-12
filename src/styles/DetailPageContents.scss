@@ -1,0 +1,78 @@
+
+
+@function fn($px){
+    @return $px/37.5*1rem;
+}
+
+.DetailPageContents{
+    width:100%;
+    height:fn(135);
+    border-top:1px solid #dadada ;
+    padding:fn(10);
+    display: flex;
+    background:#fff;
+    box-sizing: border-box;
+    .DetailPageContents-left{
+        width:fn(105);
+        height:fn(105);
+        margin-right:fn(10);
+        box-sizing: border-box;
+        
+        img{
+            width:fn(105);
+            height:fn(105);
+            border:3 px solid #dadada;
+            box-shadow:fn(0) fn(0) fn(10) #dadada;
+        }
+    }
+    .DetailPageContents-right{
+        flex:1;
+        box-sizing: border-box;
+        position: relative;
+        h3{
+            font-size: fn(14);
+            line-height: fn(24);
+            text-align: left;
+            
+        }
+        p:nth-child(4){
+            color:#f03a58;
+            bottom:fn(5);
+            position:absolute;
+            left:0;
+        }
+        p{
+            font-size: fn(12);
+            line-height: fn(20);
+            color:#444;
+            span{
+                font-size: fn(16);
+            }
+            del{
+                color:#444;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,125 @@
+@function fn($px){
+    @return $px/37.5*1rem;
+}
+
+.reg{
+    width:100%;
+    height:100%;
+    .reg-logo{
+        width:100%;
+        padding:fn(20) fn(20);
+        box-sizing: border-box;
+        img{
+            display: block;
+            width:auto;
+            height:auto;
+        }
+    }
+    .reg_user_left{
+        display: block;
+        width:fn(310);
+        height:fn(36);
+        border:1px solid #dadada ;
+        background:#fff;
+        margin:fn(10) auto;
+        padding:0 fn(10);
+        box-sizing:border-box;
+        border-radius: fn(5);
+    }
+    .reg_user_onfocus{
+        display: block;
+        width:fn(310);
+        height:fn(36);
+        background:#fff;
+        margin:fn(10) auto;
+        padding:0 fn(10);
+        box-sizing:border-box;
+        border-radius: fn(5);
+        box-shadow: fn(0) fn(0) fn(5) green;
+    }
+    .email-div{
+        display: flex;
+        padding-left:fn(20);
+        width:100%;
+        box-sizing: border-box;
+        .reg_email_onfocus{
+            width:fn(140);
+            height:fn(36);
+            box-shadow: fn(0) fn(0) fn(5) green;
+            line-height: fn(36);
+            padding-left:fn(10);
+            box-sizing: border-box;
+            border-radius: fn(5);
+            margin:fn(10);
+        }
+        .reg_email_left{
+            width:fn(140);
+            height:fn(36);
+            border:1px solid #dadada ;
+            line-height: fn(36);
+            padding-left:fn(10);
+            box-sizing: border-box;
+            border-radius: fn(5);
+            margin:fn(10);
+        }
+        .EmailBtn{
+            width:fn(110);
+            height:fn(36);
+            margin:fn(10);
+            margin-left:0;
+            line-height: fn(36);
+            border:1px solid #dadada;
+            background:#E0EDFE;
+            padding-left:fn(10);
+            border-radius: fn(5);
+        }
+        .EmailBtn_onfocus{
+            width:fn(110);
+            height:fn(36);
+            margin:fn(10);
+            margin-left:0;
+            line-height: fn(36);
+            box-shadow: fn(0) fn(0) fn(5) green;
+            background:#E0EDFE;
+            padding-left:fn(10);
+            border-radius: fn(5);
+        }
+    }
+    .reg_btn_left{
+        width:fn(50);
+        height:fn(30);
+        display: block;
+        margin:fn(10) auto;
+        background:lightcyan;
+        border:1px solid #dadada; 
+        border-radius: fn(5);
+    }
+    .reg_btn_onfocus{
+        width:fn(50);
+        height:fn(30);
+        display: block;
+        margin:fn(10) auto;
+        background:lightcyan;
+        border-radius: fn(5);
+        box-shadow: fn(0) fn(0) fn(5) green;
+    }
+    .TextStyle{
+        color:red;
+        margin:auto;
+        width:fn(240);
+        font-size: fn(14);
+        line-height: fn(20);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
